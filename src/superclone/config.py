@@ -4,7 +4,7 @@ from typing import Optional
 
 class Config:
     # Ollama model to use (default: llama3)
-    OLLAMA_MODEL: str = os.getenv("SUPERCLONE_OLLAMA_MODEL", "llama3")
+    OLLAMA_MODEL: str = os.getenv("SUPERCLONE_OLLAMA_MODEL", "llama3.1:latest")
 
     # Maximum file size to include in context (in KB)
     MAX_FILE_SIZE_KB: int = int(os.getenv("SUPERCLONE_MAX_FILE_SIZE_KB", "500"))
