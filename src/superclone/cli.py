@@ -1,7 +1,7 @@
 import sys
 from pathlib import Path
 import click
-from src.superclone.superclone import (
+from .superclone import (
     clone_repository,
     build_context_from_repo,
     generate_summary,

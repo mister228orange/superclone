@@ -2,7 +2,7 @@ import subprocess
 from pathlib import Path
 from typing import Optional
 import ollama
-from src.superclone.config import config
+from .config import config
 
 
 def check_ollama_available(model: str) -> tuple[bool, str]:
